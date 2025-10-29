@@ -1,0 +1,1114 @@
+[0m03:27:57.702440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE1D28310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE3F57D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE3F57EE0>]}
+
+
+============================== 03:27:57.706440 | 91a0622b-3a02-4f6b-a979-f7d9dc0add43 ==============================
+[0m03:27:57.706440 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:27:57.707437 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'target_path': 'None', 'log_format': 'default', 'printer_width': '80', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m03:27:57.732319 [info ] [MainThread]: dbt version: 1.10.13
+[0m03:27:57.733298 [info ] [MainThread]: python version: 3.10.11
+[0m03:27:57.734304 [info ] [MainThread]: python path: C:\Users\DELL\AppData\Local\Programs\Python\Python310\python.exe
+[0m03:27:57.734304 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m03:27:57.857467 [info ] [MainThread]: Using profiles dir at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt
+[0m03:27:57.858467 [info ] [MainThread]: Using profiles.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\profiles.yml
+[0m03:27:57.859770 [info ] [MainThread]: Using dbt_project.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\dbt_project.yml
+[0m03:27:57.863404 [info ] [MainThread]: adapter type: duckdb
+[0m03:27:57.864413 [info ] [MainThread]: adapter version: 1.9.6
+[0m03:27:57.865375 [info ] [MainThread]: Configuration:
+[0m03:27:57.866375 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:27:57.867375 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m03:27:57.867375 [info ] [MainThread]: Required dependencies:
+[0m03:27:57.868374 [debug] [MainThread]: Executing "git --help"
+[0m03:27:57.914169 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:27:57.915189 [debug] [MainThread]: STDERR: "b''"
+[0m03:27:57.915189 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:27:57.916169 [info ] [MainThread]: Connection:
+[0m03:27:57.917169 [info ] [MainThread]:   database: customer_churn_warehouse
+[0m03:27:57.918168 [info ] [MainThread]:   schema: analytics
+[0m03:27:57.919171 [info ] [MainThread]:   path: ../data/customer_churn_warehouse.duckdb
+[0m03:27:57.920168 [info ] [MainThread]:   config_options: None
+[0m03:27:57.920168 [info ] [MainThread]:   extensions: None
+[0m03:27:57.921171 [info ] [MainThread]:   settings: {}
+[0m03:27:57.922186 [info ] [MainThread]:   external_root: .
+[0m03:27:57.923190 [info ] [MainThread]:   use_credential_provider: None
+[0m03:27:57.923190 [info ] [MainThread]:   attach: None
+[0m03:27:57.924168 [info ] [MainThread]:   filesystems: None
+[0m03:27:57.925169 [info ] [MainThread]:   remote: None
+[0m03:27:57.925169 [info ] [MainThread]:   plugins: None
+[0m03:27:57.926168 [info ] [MainThread]:   disable_transactions: False
+[0m03:27:57.927169 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:27:58.321169 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m03:28:01.334538 [debug] [MainThread]: Using duckdb connection "debug"
+[0m03:28:01.334538 [debug] [MainThread]: On debug: select 1 as id
+[0m03:28:01.335539 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:28:01.362538 [debug] [MainThread]: SQL status: OK in 0.027 seconds
+[0m03:28:01.363540 [debug] [MainThread]: On debug: Close
+[0m03:28:01.364538 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:28:01.365540 [info ] [MainThread]: [31m1 check failed:[0m
+[0m03:28:01.366539 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+
+
+[0m03:28:01.368568 [debug] [MainThread]: Command `dbt debug` failed at 03:28:01.367538 after 3.79 seconds
+[0m03:28:01.368568 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:28:01.369535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE1D28310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE40ED840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CE40ED480>]}
+[0m03:28:01.370538 [debug] [MainThread]: Flushing usage events
+[0m03:28:02.296568 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:31:03.214809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAFA6482B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAFC865E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAFC865C30>]}
+
+
+============================== 03:31:03.218808 | 51243984-a355-4cd8-826a-6036688ef0ee ==============================
+[0m03:31:03.218808 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:31:03.219829 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'target_path': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'warn_error': 'None', 'log_path': 'logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m03:31:03.220808 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+[0m03:31:03.222809 [debug] [MainThread]: Command `dbt run` failed at 03:31:03.222809 after 0.12 seconds
+[0m03:31:03.222809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAFA6482B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAFC865C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAFC865ED0>]}
+[0m03:31:03.223809 [debug] [MainThread]: Flushing usage events
+[0m03:31:04.027489 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:34:25.251442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B9D8B82E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B9FAE3C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B9FAE3E50>]}
+
+
+============================== 03:34:25.255443 | 6e8c5256-4e71-462b-9051-b5bc9f9882c6 ==============================
+[0m03:34:25.255443 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:34:25.257465 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m03:34:25.284171 [info ] [MainThread]: dbt version: 1.10.13
+[0m03:34:25.285153 [info ] [MainThread]: python version: 3.10.11
+[0m03:34:25.285153 [info ] [MainThread]: python path: C:\Users\DELL\AppData\Local\Programs\Python\Python310\python.exe
+[0m03:34:25.286137 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m03:34:25.413655 [info ] [MainThread]: Using profiles dir at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt
+[0m03:34:25.414659 [info ] [MainThread]: Using profiles.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\profiles.yml
+[0m03:34:25.415692 [info ] [MainThread]: Using dbt_project.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\dbt_project.yml
+[0m03:34:25.418244 [info ] [MainThread]: adapter type: duckdb
+[0m03:34:25.419363 [info ] [MainThread]: adapter version: 1.9.6
+[0m03:34:25.421062 [info ] [MainThread]: Configuration:
+[0m03:34:25.422060 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:34:25.423072 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m03:34:25.424061 [info ] [MainThread]: Required dependencies:
+[0m03:34:25.424061 [debug] [MainThread]: Executing "git --help"
+[0m03:34:25.469732 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:34:25.470729 [debug] [MainThread]: STDERR: "b''"
+[0m03:34:25.471762 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:34:25.472730 [info ] [MainThread]: Connection:
+[0m03:34:25.473765 [info ] [MainThread]:   database: customer_churn_warehouse
+[0m03:34:25.474767 [info ] [MainThread]:   schema: analytics
+[0m03:34:25.475731 [info ] [MainThread]:   path: ../data/customer_churn_warehouse.duckdb
+[0m03:34:25.476729 [info ] [MainThread]:   config_options: None
+[0m03:34:25.476729 [info ] [MainThread]:   extensions: None
+[0m03:34:25.477729 [info ] [MainThread]:   settings: {}
+[0m03:34:25.478750 [info ] [MainThread]:   external_root: .
+[0m03:34:25.479529 [info ] [MainThread]:   use_credential_provider: None
+[0m03:34:25.480534 [info ] [MainThread]:   attach: None
+[0m03:34:25.480534 [info ] [MainThread]:   filesystems: None
+[0m03:34:25.481565 [info ] [MainThread]:   remote: None
+[0m03:34:25.482533 [info ] [MainThread]:   plugins: None
+[0m03:34:25.483534 [info ] [MainThread]:   disable_transactions: False
+[0m03:34:25.484534 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:34:25.850568 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m03:34:25.939263 [debug] [MainThread]: Using duckdb connection "debug"
+[0m03:34:25.940301 [debug] [MainThread]: On debug: select 1 as id
+[0m03:34:25.941298 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:34:25.959264 [debug] [MainThread]: SQL status: OK in 0.018 seconds
+[0m03:34:25.960265 [debug] [MainThread]: On debug: Close
+[0m03:34:25.961296 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:34:25.962379 [info ] [MainThread]: [31m1 check failed:[0m
+[0m03:34:25.963385 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\dbt_project.yml
+
+
+[0m03:34:25.964400 [debug] [MainThread]: Command `dbt debug` failed at 03:34:25.964400 after 0.80 seconds
+[0m03:34:25.965413 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:34:25.966387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B9D8B82E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B9FC5DC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B9FC5D4B0>]}
+[0m03:34:25.966387 [debug] [MainThread]: Flushing usage events
+[0m03:34:26.758600 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:34:44.134352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893A0683A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893C28FCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893C28FE80>]}
+
+
+============================== 03:34:44.138824 | d5027724-882c-441d-8520-3539b34e6dcb ==============================
+[0m03:34:44.138824 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:34:44.139795 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'invocation_command': 'dbt run', 'printer_width': '80', 'log_format': 'default', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m03:34:44.142795 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt/profiles.yml
+  
+[0m03:34:44.143795 [debug] [MainThread]: Command `dbt run` failed at 03:34:44.143795 after 0.10 seconds
+[0m03:34:44.144795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893A0683A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893C28F4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893C28FE20>]}
+[0m03:34:44.145794 [debug] [MainThread]: Flushing usage events
+[0m03:34:44.817174 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:36:36.375437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241751282B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024177357C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024177357E50>]}
+
+
+============================== 03:36:36.380427 | 921bd245-2dcb-4df7-8b5f-494dbc0eeae1 ==============================
+[0m03:36:36.380427 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:36:36.381427 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'use_colors': 'True', 'no_print': 'None', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'write_json': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m03:36:36.403428 [info ] [MainThread]: dbt version: 1.10.13
+[0m03:36:36.404428 [info ] [MainThread]: python version: 3.10.11
+[0m03:36:36.405429 [info ] [MainThread]: python path: C:\Users\DELL\AppData\Local\Programs\Python\Python310\python.exe
+[0m03:36:36.406428 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m03:36:36.529531 [info ] [MainThread]: Using profiles dir at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt
+[0m03:36:36.530613 [info ] [MainThread]: Using profiles.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\profiles.yml
+[0m03:36:36.531619 [info ] [MainThread]: Using dbt_project.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\dbt_project.yml
+[0m03:36:36.534658 [info ] [MainThread]: adapter type: duckdb
+[0m03:36:36.535619 [info ] [MainThread]: adapter version: 1.9.6
+[0m03:36:36.537652 [info ] [MainThread]: Configuration:
+[0m03:36:36.537652 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:36:36.538652 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m03:36:36.539652 [info ] [MainThread]: Required dependencies:
+[0m03:36:36.539652 [debug] [MainThread]: Executing "git --help"
+[0m03:36:36.580298 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:36:36.580298 [debug] [MainThread]: STDERR: "b''"
+[0m03:36:36.581299 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:36:36.582299 [info ] [MainThread]: Connection:
+[0m03:36:36.583299 [info ] [MainThread]:   database: customer_churn_warehouse
+[0m03:36:36.583299 [info ] [MainThread]:   schema: analytics
+[0m03:36:36.584300 [info ] [MainThread]:   path: ../data/customer_churn_warehouse.duckdb
+[0m03:36:36.585298 [info ] [MainThread]:   config_options: None
+[0m03:36:36.585298 [info ] [MainThread]:   extensions: None
+[0m03:36:36.586299 [info ] [MainThread]:   settings: {}
+[0m03:36:36.587299 [info ] [MainThread]:   external_root: .
+[0m03:36:36.588299 [info ] [MainThread]:   use_credential_provider: None
+[0m03:36:36.588299 [info ] [MainThread]:   attach: None
+[0m03:36:36.589299 [info ] [MainThread]:   filesystems: None
+[0m03:36:36.590299 [info ] [MainThread]:   remote: None
+[0m03:36:36.591299 [info ] [MainThread]:   plugins: None
+[0m03:36:36.591299 [info ] [MainThread]:   disable_transactions: False
+[0m03:36:36.593299 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:36:36.958333 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m03:36:37.045579 [debug] [MainThread]: Using duckdb connection "debug"
+[0m03:36:37.046545 [debug] [MainThread]: On debug: select 1 as id
+[0m03:36:37.046545 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:36:37.063577 [debug] [MainThread]: SQL status: OK in 0.017 seconds
+[0m03:36:37.064571 [debug] [MainThread]: On debug: Close
+[0m03:36:37.065544 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:36:37.066544 [info ] [MainThread]: [31m1 check failed:[0m
+[0m03:36:37.067578 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\dbt_project.yml
+
+
+[0m03:36:37.069577 [debug] [MainThread]: Command `dbt debug` failed at 03:36:37.068547 after 0.79 seconds
+[0m03:36:37.069577 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:36:37.070593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241751282B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002417849DBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002417849D450>]}
+[0m03:36:37.070593 [debug] [MainThread]: Flushing usage events
+[0m03:36:37.988544 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:37:50.419110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B8DF582B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B90183C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B90183E50>]}
+
+
+============================== 03:37:50.423065 | 3895edfc-5626-46ba-b1c7-ba187bbe6a20 ==============================
+[0m03:37:50.423065 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:37:50.424062 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'printer_width': '80', 'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m03:37:50.445042 [info ] [MainThread]: dbt version: 1.10.13
+[0m03:37:50.446058 [info ] [MainThread]: python version: 3.10.11
+[0m03:37:50.447032 [info ] [MainThread]: python path: C:\Users\DELL\AppData\Local\Programs\Python\Python310\python.exe
+[0m03:37:50.448029 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m03:37:50.570152 [info ] [MainThread]: Using profiles dir at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt
+[0m03:37:50.571137 [info ] [MainThread]: Using profiles.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\profiles.yml
+[0m03:37:50.572380 [info ] [MainThread]: Using dbt_project.yml file at E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\dbt_project.yml
+[0m03:37:50.575173 [info ] [MainThread]: adapter type: duckdb
+[0m03:37:50.576173 [info ] [MainThread]: adapter version: 1.9.6
+[0m03:37:50.693209 [info ] [MainThread]: Configuration:
+[0m03:37:50.694174 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:37:50.695175 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m03:37:50.696181 [info ] [MainThread]: Required dependencies:
+[0m03:37:50.696181 [debug] [MainThread]: Executing "git --help"
+[0m03:37:50.738172 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:37:50.739210 [debug] [MainThread]: STDERR: "b''"
+[0m03:37:50.740174 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:37:50.741117 [info ] [MainThread]: Connection:
+[0m03:37:50.742167 [info ] [MainThread]:   database: customer_churn_warehouse
+[0m03:37:50.742775 [info ] [MainThread]:   schema: analytics
+[0m03:37:50.743780 [info ] [MainThread]:   path: ../data/customer_churn_warehouse.duckdb
+[0m03:37:50.743780 [info ] [MainThread]:   config_options: None
+[0m03:37:50.745782 [info ] [MainThread]:   extensions: None
+[0m03:37:50.745782 [info ] [MainThread]:   settings: {}
+[0m03:37:50.746781 [info ] [MainThread]:   external_root: .
+[0m03:37:50.747780 [info ] [MainThread]:   use_credential_provider: None
+[0m03:37:50.748780 [info ] [MainThread]:   attach: None
+[0m03:37:50.748780 [info ] [MainThread]:   filesystems: None
+[0m03:37:50.749780 [info ] [MainThread]:   remote: None
+[0m03:37:50.750686 [info ] [MainThread]:   plugins: None
+[0m03:37:50.751751 [info ] [MainThread]:   disable_transactions: False
+[0m03:37:50.752725 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:37:51.117691 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m03:37:51.209800 [debug] [MainThread]: Using duckdb connection "debug"
+[0m03:37:51.210803 [debug] [MainThread]: On debug: select 1 as id
+[0m03:37:51.211802 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:37:51.228630 [debug] [MainThread]: SQL status: OK in 0.017 seconds
+[0m03:37:51.230630 [debug] [MainThread]: On debug: Close
+[0m03:37:51.230630 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:37:51.231632 [info ] [MainThread]: [32mAll checks passed![0m
+[0m03:37:51.233644 [debug] [MainThread]: Command `dbt debug` succeeded at 03:37:51.233644 after 0.92 seconds
+[0m03:37:51.233644 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:37:51.234644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B8DF582B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B902BD450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B9135BD60>]}
+[0m03:37:51.235643 [debug] [MainThread]: Flushing usage events
+[0m03:37:52.019631 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:37:57.885380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE87B68340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE89B7FC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE89B7E470>]}
+
+
+============================== 03:37:57.889410 | 1d730bd9-3c23-49e1-9ea8-6f8f48d2899e ==============================
+[0m03:37:57.889410 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:37:57.890417 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'cache_selected_only': 'False', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m03:37:58.286370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE89D8F880>]}
+[0m03:37:58.358374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE89D401F0>]}
+[0m03:37:58.363376 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:37:58.742493 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m03:37:58.743506 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:37:58.744494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE8AF57730>]}
+[0m03:38:01.301651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE8B6BA2C0>]}
+[0m03:38:01.418529 [debug] [MainThread]: Wrote artifact WritableManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\manifest.json
+[0m03:38:01.422531 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\semantic_manifest.json
+[0m03:38:01.469123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE8B6CB3A0>]}
+[0m03:38:01.470124 [info ] [MainThread]: Found 3 models, 3 data tests, 444 macros
+[0m03:38:01.471124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE874FB250>]}
+[0m03:38:01.472121 [info ] [MainThread]: 
+[0m03:38:01.473119 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:38:01.474121 [info ] [MainThread]: 
+[0m03:38:01.475122 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m03:38:01.481359 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_customer_churn_warehouse'
+[0m03:38:01.631712 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse"
+[0m03:38:01.632748 [debug] [ThreadPool]: On list_customer_churn_warehouse: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "list_customer_churn_warehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"customer_churn_warehouse"'
+    
+  
+  
+[0m03:38:01.633748 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:38:01.673214 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m03:38:01.676218 [debug] [ThreadPool]: On list_customer_churn_warehouse: Close
+[0m03:38:01.677220 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_customer_churn_warehouse, now create_customer_churn_warehouse_analytics)
+[0m03:38:01.678219 [debug] [ThreadPool]: Creating schema "database: "customer_churn_warehouse"
+schema: "analytics"
+"
+[0m03:38:01.685218 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:38:01.685218 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "create_customer_churn_warehouse_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='customer_churn_warehouse'
+        and type='sqlite'
+    
+  
+[0m03:38:01.686218 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:38:01.688502 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m03:38:01.689346 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:38:01.690351 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: BEGIN
+[0m03:38:01.691351 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:38:01.692351 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:38:01.692351 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "create_customer_churn_warehouse_analytics"} */
+
+    
+    
+        create schema if not exists "customer_churn_warehouse"."analytics"
+    
+[0m03:38:01.693807 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m03:38:01.695811 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: COMMIT
+[0m03:38:01.695811 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:38:01.696811 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: COMMIT
+[0m03:38:01.729893 [debug] [ThreadPool]: SQL status: OK in 0.033 seconds
+[0m03:38:01.730629 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: Close
+[0m03:38:01.732628 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_customer_churn_warehouse_analytics'
+[0m03:38:01.738626 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse_analytics"
+[0m03:38:01.738626 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: BEGIN
+[0m03:38:01.739627 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:38:01.740580 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m03:38:01.741586 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse_analytics"
+[0m03:38:01.741586 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "list_customer_churn_warehouse_analytics"} */
+select
+      'customer_churn_warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'customer_churn_warehouse'
+  
+[0m03:38:01.783124 [debug] [ThreadPool]: SQL status: OK in 0.041 seconds
+[0m03:38:01.785130 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: ROLLBACK
+[0m03:38:01.786837 [debug] [ThreadPool]: Failed to rollback 'list_customer_churn_warehouse_analytics'
+[0m03:38:01.787874 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: Close
+[0m03:38:01.788877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE8B62FC10>]}
+[0m03:38:01.789844 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:38:01.789844 [debug] [MainThread]: On master: BEGIN
+[0m03:38:01.790877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:38:01.791846 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:38:01.791846 [debug] [MainThread]: On master: COMMIT
+[0m03:38:01.792877 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:38:01.793843 [debug] [MainThread]: On master: COMMIT
+[0m03:38:01.793843 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:38:01.794879 [debug] [MainThread]: On master: Close
+[0m03:38:01.800844 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.staging_customer_churn
+[0m03:38:01.801843 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics.staging_customer_churn ................... [RUN]
+[0m03:38:01.802842 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.customer_churn_dbt.staging_customer_churn'
+[0m03:38:01.802842 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.staging_customer_churn
+[0m03:38:01.810844 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.staging_customer_churn"
+[0m03:38:01.814497 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.staging_customer_churn
+[0m03:38:01.845502 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.staging_customer_churn"
+[0m03:38:01.848534 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:38:01.850503 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: BEGIN
+[0m03:38:01.851502 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:38:01.852506 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:38:01.853533 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:38:01.854503 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_tmp" as (
+    WITH source AS (
+    SELECT * FROM staging.customer_churn
+)
+, cleaned AS (
+    SELECT
+        customerID AS customer_id,
+        gender,
+        SeniorCitizen,
+        Partner_Flag,
+        Dependents_Flag,
+        tenure,
+        InternetService,
+        Contract,
+        MonthlyCharges,
+        TotalCharges,
+        Churn_Flag
+    FROM source
+)
+SELECT * FROM cleaned;
+  );
+
+[0m03:38:01.859502 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_tmp" as (
+    WITH source AS (
+    SELECT * FROM staging.customer_churn
+)
+, cleaned AS (
+    SELECT
+        customerID AS customer_id,
+        gender,
+        SeniorCitizen,
+        Partner_Flag,
+        Dependents_Flag,
+        tenure,
+        InternetService,
+        Contract,
+        MonthlyCharges,
+        TotalCharges,
+        Churn_Flag
+    FROM source
+)
+SELECT * FROM cleaned;
+  );
+
+[0m03:38:01.860501 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m03:38:01.861504 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: ROLLBACK
+[0m03:38:01.884504 [debug] [Thread-1 (]: Failed to rollback 'model.customer_churn_dbt.staging_customer_churn'
+[0m03:38:01.885507 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: Close
+[0m03:38:01.889502 [debug] [Thread-1 (]: Runtime Error in model staging_customer_churn (models\staging\staging_customer_churn.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 23: SELECT * FROM cleaned;
+                                ^
+[0m03:38:01.893544 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1d730bd9-3c23-49e1-9ea8-6f8f48d2899e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE87913EB0>]}
+[0m03:38:01.895505 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model analytics.staging_customer_churn .......... [[31mERROR[0m in 0.09s]
+[0m03:38:01.896519 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.staging_customer_churn
+[0m03:38:01.897504 [debug] [Thread-4 (]: Marking all children of 'model.customer_churn_dbt.staging_customer_churn' to be skipped because of status 'error'.  Reason: Runtime Error in model staging_customer_churn (models\staging\staging_customer_churn.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 23: SELECT * FROM cleaned;
+                                ^.
+[0m03:38:01.898502 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.fact_churn
+[0m03:38:01.899502 [info ] [Thread-1 (]: 2 of 3 SKIP relation analytics.fact_churn ...................................... [[33mSKIP[0m]
+[0m03:38:01.900502 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.fact_churn
+[0m03:38:01.901537 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:38:01.902534 [info ] [Thread-1 (]: 3 of 3 SKIP relation analytics.intermediate_customer_metrics ................... [[33mSKIP[0m]
+[0m03:38:01.903539 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:38:01.905516 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:38:01.906502 [debug] [MainThread]: On master: BEGIN
+[0m03:38:01.906502 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:38:01.907560 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:38:01.908502 [debug] [MainThread]: On master: COMMIT
+[0m03:38:01.909501 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:38:01.909501 [debug] [MainThread]: On master: COMMIT
+[0m03:38:01.911502 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:38:01.911502 [debug] [MainThread]: On master: Close
+[0m03:38:01.912536 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:38:01.912536 [debug] [MainThread]: Connection 'create_customer_churn_warehouse_analytics' was properly closed.
+[0m03:38:01.913502 [debug] [MainThread]: Connection 'list_customer_churn_warehouse_analytics' was properly closed.
+[0m03:38:01.914549 [debug] [MainThread]: Connection 'model.customer_churn_dbt.staging_customer_churn' was properly closed.
+[0m03:38:01.915503 [info ] [MainThread]: 
+[0m03:38:01.916502 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.44 seconds (0.44s).
+[0m03:38:01.917533 [debug] [MainThread]: Command end result
+[0m03:38:01.961006 [debug] [MainThread]: Wrote artifact WritableManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\manifest.json
+[0m03:38:01.963038 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\semantic_manifest.json
+[0m03:38:01.972004 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\run_results.json
+[0m03:38:01.972004 [info ] [MainThread]: 
+[0m03:38:01.973006 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:38:01.974040 [info ] [MainThread]: 
+[0m03:38:01.975006 [error] [MainThread]: [31mFailure in model staging_customer_churn (models\staging\staging_customer_churn.sql)[0m
+[0m03:38:01.976006 [error] [MainThread]:   Runtime Error in model staging_customer_churn (models\staging\staging_customer_churn.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 23: SELECT * FROM cleaned;
+                                ^
+[0m03:38:01.977004 [info ] [MainThread]: 
+[0m03:38:01.977004 [info ] [MainThread]:   compiled code at target\compiled\customer_churn_dbt\models\staging\staging_customer_churn.sql
+[0m03:38:01.978219 [info ] [MainThread]: 
+[0m03:38:01.978970 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m03:38:01.980903 [debug] [MainThread]: Command `dbt run` failed at 03:38:01.980903 after 4.19 seconds
+[0m03:38:01.980903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE87B68340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE874C2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE8B6BBD60>]}
+[0m03:38:01.993624 [debug] [MainThread]: Flushing usage events
+[0m03:38:02.704221 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:39:11.957207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF4F2C370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF70DB4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF70DBB20>]}
+
+
+============================== 03:39:11.961204 | df1a1413-9067-48d5-b48d-7374534429bd ==============================
+[0m03:39:11.961204 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:39:11.962208 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'write_json': 'True', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'warn_error': 'None', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m03:39:12.305204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF6151BD0>]}
+[0m03:39:12.373204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF6151120>]}
+[0m03:39:12.376009 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:39:12.741009 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m03:39:12.963330 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:39:12.964330 [debug] [MainThread]: Partial parsing: updated file: customer_churn_dbt://models\staging\staging_customer_churn.sql
+[0m03:39:13.435330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF89DBEE0>]}
+[0m03:39:13.564848 [debug] [MainThread]: Wrote artifact WritableManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\manifest.json
+[0m03:39:13.567846 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\semantic_manifest.json
+[0m03:39:13.594798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF8743160>]}
+[0m03:39:13.595776 [info ] [MainThread]: Found 3 models, 3 data tests, 444 macros
+[0m03:39:13.596776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF8741450>]}
+[0m03:39:13.598812 [info ] [MainThread]: 
+[0m03:39:13.610719 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:39:13.612741 [info ] [MainThread]: 
+[0m03:39:13.615734 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m03:39:13.624764 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_customer_churn_warehouse'
+[0m03:39:13.723764 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse"
+[0m03:39:13.724800 [debug] [ThreadPool]: On list_customer_churn_warehouse: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "list_customer_churn_warehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"customer_churn_warehouse"'
+    
+  
+  
+[0m03:39:13.725784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:39:13.764524 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m03:39:13.765529 [debug] [ThreadPool]: On list_customer_churn_warehouse: Close
+[0m03:39:13.767281 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_customer_churn_warehouse, now create_customer_churn_warehouse_analytics)
+[0m03:39:13.768290 [debug] [ThreadPool]: Creating schema "database: "customer_churn_warehouse"
+schema: "analytics"
+"
+[0m03:39:13.776288 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:39:13.776288 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "create_customer_churn_warehouse_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='customer_churn_warehouse'
+        and type='sqlite'
+    
+  
+[0m03:39:13.777316 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:39:13.779287 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m03:39:13.780316 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:39:13.781315 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: BEGIN
+[0m03:39:13.782290 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:39:13.782290 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:39:13.783287 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "create_customer_churn_warehouse_analytics"} */
+
+    
+    
+        create schema if not exists "customer_churn_warehouse"."analytics"
+    
+[0m03:39:13.784290 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:39:13.785287 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: COMMIT
+[0m03:39:13.786288 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:39:13.786288 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: COMMIT
+[0m03:39:13.787287 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:39:13.788286 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: Close
+[0m03:39:13.789287 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_customer_churn_warehouse_analytics'
+[0m03:39:13.795287 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse_analytics"
+[0m03:39:13.796286 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: BEGIN
+[0m03:39:13.797293 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:39:13.798287 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m03:39:13.798287 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse_analytics"
+[0m03:39:13.799286 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "list_customer_churn_warehouse_analytics"} */
+select
+      'customer_churn_warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'customer_churn_warehouse'
+  
+[0m03:39:13.813320 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m03:39:13.814320 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: ROLLBACK
+[0m03:39:13.815320 [debug] [ThreadPool]: Failed to rollback 'list_customer_churn_warehouse_analytics'
+[0m03:39:13.816320 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: Close
+[0m03:39:13.817506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF4902890>]}
+[0m03:39:13.817506 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:39:13.818547 [debug] [MainThread]: On master: BEGIN
+[0m03:39:13.818547 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:39:13.819546 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:39:13.820527 [debug] [MainThread]: On master: COMMIT
+[0m03:39:13.821517 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:39:13.821517 [debug] [MainThread]: On master: COMMIT
+[0m03:39:13.822548 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:39:13.823567 [debug] [MainThread]: On master: Close
+[0m03:39:13.827701 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.staging_customer_churn
+[0m03:39:13.828702 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics.staging_customer_churn ................... [RUN]
+[0m03:39:13.829715 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.customer_churn_dbt.staging_customer_churn'
+[0m03:39:13.830703 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.staging_customer_churn
+[0m03:39:13.837730 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.839705 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.staging_customer_churn
+[0m03:39:13.868734 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.870704 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.871704 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: BEGIN
+[0m03:39:13.871704 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:39:13.873701 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:39:13.873701 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.874736 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_tmp" as (
+    WITH source AS (
+    SELECT * FROM staging.customer_churn
+)
+, cleaned AS (
+    SELECT
+        customerID AS customer_id,
+        gender,
+        SeniorCitizen,
+        Partner_Flag,
+        Dependents_Flag,
+        tenure,
+        InternetService,
+        Contract,
+        MonthlyCharges,
+        TotalCharges,
+        Churn_Flag
+    FROM source
+)
+SELECT * FROM cleaned
+  );
+
+[0m03:39:13.879030 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m03:39:13.886072 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.886072 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+alter view "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_tmp" rename to "staging_customer_churn"
+[0m03:39:13.888711 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:39:13.898716 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: COMMIT
+[0m03:39:13.899716 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.899716 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: COMMIT
+[0m03:39:13.941432 [debug] [Thread-1 (]: SQL status: OK in 0.041 seconds
+[0m03:39:13.947438 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:39:13.948438 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+
+      drop view if exists "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_backup" cascade
+    
+[0m03:39:13.950440 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:39:13.953438 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: Close
+[0m03:39:13.955438 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF4902890>]}
+[0m03:39:13.956439 [info ] [Thread-1 (]: 1 of 3 OK created sql view model analytics.staging_customer_churn .............. [[32mOK[0m in 0.12s]
+[0m03:39:13.957612 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.staging_customer_churn
+[0m03:39:13.958654 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.fact_churn
+[0m03:39:13.959618 [info ] [Thread-1 (]: 2 of 3 START sql view model analytics.fact_churn ............................... [RUN]
+[0m03:39:13.960616 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_churn_dbt.staging_customer_churn, now model.customer_churn_dbt.fact_churn)
+[0m03:39:13.961618 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.fact_churn
+[0m03:39:13.964616 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.fact_churn"
+[0m03:39:13.980097 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.fact_churn
+[0m03:39:13.985124 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.fact_churn"
+[0m03:39:13.987091 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:39:13.988124 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: BEGIN
+[0m03:39:13.989091 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:39:13.990104 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:39:13.990104 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:39:13.991125 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.fact_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."fact_churn__dbt_tmp" as (
+    WITH base AS (
+    SELECT * FROM "customer_churn_warehouse"."analytics"."staging_customer_churn"
+)
+SELECT
+    customer_id,
+    tenure,
+    Contract,
+    InternetService,
+    MonthlyCharges,
+    TotalCharges,
+    Churn_Flag
+FROM base;
+  );
+
+[0m03:39:13.992100 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.fact_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."fact_churn__dbt_tmp" as (
+    WITH base AS (
+    SELECT * FROM "customer_churn_warehouse"."analytics"."staging_customer_churn"
+)
+SELECT
+    customer_id,
+    tenure,
+    Contract,
+    InternetService,
+    MonthlyCharges,
+    TotalCharges,
+    Churn_Flag
+FROM base;
+  );
+
+[0m03:39:13.993127 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m03:39:13.994091 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: ROLLBACK
+[0m03:39:13.998121 [debug] [Thread-1 (]: Failed to rollback 'model.customer_churn_dbt.fact_churn'
+[0m03:39:13.999125 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: Close
+[0m03:39:14.001119 [debug] [Thread-1 (]: Runtime Error in model fact_churn (models\marts\fact_churn.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 16: FROM base;
+                    ^
+[0m03:39:14.002097 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF892DA20>]}
+[0m03:39:14.003092 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model analytics.fact_churn ...................... [[31mERROR[0m in 0.04s]
+[0m03:39:14.004093 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.fact_churn
+[0m03:39:14.005093 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:39:14.005093 [debug] [Thread-4 (]: Marking all children of 'model.customer_churn_dbt.fact_churn' to be skipped because of status 'error'.  Reason: Runtime Error in model fact_churn (models\marts\fact_churn.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 16: FROM base;
+                    ^.
+[0m03:39:14.006091 [info ] [Thread-1 (]: 3 of 3 START sql view model analytics.intermediate_customer_metrics ............ [RUN]
+[0m03:39:14.008093 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_churn_dbt.fact_churn, now model.customer_churn_dbt.intermediate_customer_metrics)
+[0m03:39:14.008093 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:39:14.012091 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:39:14.014242 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:39:14.020249 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:39:14.021247 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:39:14.023249 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: BEGIN
+[0m03:39:14.024248 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:39:14.025247 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:39:14.025247 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:39:14.026248 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.intermediate_customer_metrics"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."intermediate_customer_metrics__dbt_tmp" as (
+    WITH base AS (
+    SELECT * FROM "customer_churn_warehouse"."analytics"."staging_customer_churn"
+)
+SELECT
+    gender,
+    Contract,
+    InternetService,
+    COUNT(*) AS total_customers,
+    SUM(Churn_Flag) AS churned_customers,
+    ROUND(SUM(Churn_Flag) * 100.0 / COUNT(*), 2) AS churn_rate
+FROM base
+GROUP BY 1,2,3
+ORDER BY churn_rate DESC;
+  );
+
+[0m03:39:14.029246 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.intermediate_customer_metrics"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."intermediate_customer_metrics__dbt_tmp" as (
+    WITH base AS (
+    SELECT * FROM "customer_churn_warehouse"."analytics"."staging_customer_churn"
+)
+SELECT
+    gender,
+    Contract,
+    InternetService,
+    COUNT(*) AS total_customers,
+    SUM(Churn_Flag) AS churned_customers,
+    ROUND(SUM(Churn_Flag) * 100.0 / COUNT(*), 2) AS churn_rate
+FROM base
+GROUP BY 1,2,3
+ORDER BY churn_rate DESC;
+  );
+
+[0m03:39:14.029246 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m03:39:14.030247 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: ROLLBACK
+[0m03:39:14.032247 [debug] [Thread-1 (]: Failed to rollback 'model.customer_churn_dbt.intermediate_customer_metrics'
+[0m03:39:14.032247 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: Close
+[0m03:39:14.034281 [debug] [Thread-1 (]: Runtime Error in model intermediate_customer_metrics (models\intermediate\intermediate_customer_metrics.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 17: ORDER BY churn_rate DESC;
+                                   ^
+[0m03:39:14.035283 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df1a1413-9067-48d5-b48d-7374534429bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF892E2F0>]}
+[0m03:39:14.036249 [error] [Thread-1 (]: 3 of 3 ERROR creating sql view model analytics.intermediate_customer_metrics ... [[31mERROR[0m in 0.03s]
+[0m03:39:14.037250 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:39:14.038281 [debug] [Thread-4 (]: Marking all children of 'model.customer_churn_dbt.intermediate_customer_metrics' to be skipped because of status 'error'.  Reason: Runtime Error in model intermediate_customer_metrics (models\intermediate\intermediate_customer_metrics.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 17: ORDER BY churn_rate DESC;
+                                   ^.
+[0m03:39:14.040248 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:39:14.040248 [debug] [MainThread]: On master: BEGIN
+[0m03:39:14.041248 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:39:14.042246 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:39:14.043246 [debug] [MainThread]: On master: COMMIT
+[0m03:39:14.043246 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:39:14.044247 [debug] [MainThread]: On master: COMMIT
+[0m03:39:14.045249 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:39:14.046248 [debug] [MainThread]: On master: Close
+[0m03:39:14.046248 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:39:14.047248 [debug] [MainThread]: Connection 'create_customer_churn_warehouse_analytics' was properly closed.
+[0m03:39:14.048270 [debug] [MainThread]: Connection 'list_customer_churn_warehouse_analytics' was properly closed.
+[0m03:39:14.048270 [debug] [MainThread]: Connection 'model.customer_churn_dbt.intermediate_customer_metrics' was properly closed.
+[0m03:39:14.049247 [info ] [MainThread]: 
+[0m03:39:14.049879 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m03:39:14.051923 [debug] [MainThread]: Command end result
+[0m03:39:14.088244 [debug] [MainThread]: Wrote artifact WritableManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\manifest.json
+[0m03:39:14.094183 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\semantic_manifest.json
+[0m03:39:14.101218 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\run_results.json
+[0m03:39:14.102195 [info ] [MainThread]: 
+[0m03:39:14.103211 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m03:39:14.104199 [info ] [MainThread]: 
+[0m03:39:14.105186 [error] [MainThread]: [31mFailure in model fact_churn (models\marts\fact_churn.sql)[0m
+[0m03:39:14.106217 [error] [MainThread]:   Runtime Error in model fact_churn (models\marts\fact_churn.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 16: FROM base;
+                    ^
+[0m03:39:14.107184 [info ] [MainThread]: 
+[0m03:39:14.107184 [info ] [MainThread]:   compiled code at target\compiled\customer_churn_dbt\models\marts\fact_churn.sql
+[0m03:39:14.108222 [info ] [MainThread]: 
+[0m03:39:14.109059 [error] [MainThread]: [31mFailure in model intermediate_customer_metrics (models\intermediate\intermediate_customer_metrics.sql)[0m
+[0m03:39:14.110043 [error] [MainThread]:   Runtime Error in model intermediate_customer_metrics (models\intermediate\intermediate_customer_metrics.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 17: ORDER BY churn_rate DESC;
+                                   ^
+[0m03:39:14.111047 [info ] [MainThread]: 
+[0m03:39:14.112049 [info ] [MainThread]:   compiled code at target\compiled\customer_churn_dbt\models\intermediate\intermediate_customer_metrics.sql
+[0m03:39:14.113058 [info ] [MainThread]: 
+[0m03:39:14.113058 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=3
+[0m03:39:14.115327 [debug] [MainThread]: Command `dbt run` failed at 03:39:14.115327 after 2.25 seconds
+[0m03:39:14.115327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF4F2C370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF4CA3820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AF8715720>]}
+[0m03:39:14.116327 [debug] [MainThread]: Flushing usage events
+[0m03:39:14.959085 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:40:46.285148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823B928310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823D93FC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823D93D0C0>]}
+
+
+============================== 03:40:46.292150 | 0e32c323-6866-400e-a8f7-cfeaf0042689 ==============================
+[0m03:40:46.292150 [info ] [MainThread]: Running with dbt=1.10.13
+[0m03:40:46.293147 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'log_format': 'default', 'profiles_dir': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'E:\\DEPI & Eyouth\\MiniProject\\project_customer_churn\\customer_churn_dbt\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m03:40:46.646148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018239DCDD80>]}
+[0m03:40:46.713149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823DB3D300>]}
+[0m03:40:46.716746 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m03:40:47.084748 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m03:40:47.309283 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m03:40:47.310307 [debug] [MainThread]: Partial parsing: updated file: customer_churn_dbt://models\intermediate\intermediate_customer_metrics.sql
+[0m03:40:47.311282 [debug] [MainThread]: Partial parsing: updated file: customer_churn_dbt://models\marts\fact_churn.sql
+[0m03:40:47.635310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823D2E5480>]}
+[0m03:40:47.730325 [debug] [MainThread]: Wrote artifact WritableManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\manifest.json
+[0m03:40:47.733325 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\semantic_manifest.json
+[0m03:40:47.761245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823ED14B50>]}
+[0m03:40:47.762251 [info ] [MainThread]: Found 3 models, 3 data tests, 444 macros
+[0m03:40:47.763245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823DC75BA0>]}
+[0m03:40:47.765240 [info ] [MainThread]: 
+[0m03:40:47.765240 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:40:47.766242 [info ] [MainThread]: 
+[0m03:40:47.767241 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m03:40:47.774241 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_customer_churn_warehouse'
+[0m03:40:47.874690 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse"
+[0m03:40:47.875656 [debug] [ThreadPool]: On list_customer_churn_warehouse: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "list_customer_churn_warehouse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"customer_churn_warehouse"'
+    
+  
+  
+[0m03:40:47.876657 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:40:47.903057 [debug] [ThreadPool]: SQL status: OK in 0.027 seconds
+[0m03:40:47.905056 [debug] [ThreadPool]: On list_customer_churn_warehouse: Close
+[0m03:40:47.906056 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_customer_churn_warehouse, now create_customer_churn_warehouse_analytics)
+[0m03:40:47.907056 [debug] [ThreadPool]: Creating schema "database: "customer_churn_warehouse"
+schema: "analytics"
+"
+[0m03:40:47.913055 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:40:47.914057 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "create_customer_churn_warehouse_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='customer_churn_warehouse'
+        and type='sqlite'
+    
+  
+[0m03:40:47.915057 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:40:47.917057 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m03:40:47.919056 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:40:47.919056 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: BEGIN
+[0m03:40:47.920057 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:40:47.921056 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:40:47.921056 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "create_customer_churn_warehouse_analytics"} */
+
+    
+    
+        create schema if not exists "customer_churn_warehouse"."analytics"
+    
+[0m03:40:47.922056 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:40:47.924096 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: COMMIT
+[0m03:40:47.924096 [debug] [ThreadPool]: Using duckdb connection "create_customer_churn_warehouse_analytics"
+[0m03:40:47.925057 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: COMMIT
+[0m03:40:47.926059 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:40:47.927058 [debug] [ThreadPool]: On create_customer_churn_warehouse_analytics: Close
+[0m03:40:47.929184 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_customer_churn_warehouse_analytics'
+[0m03:40:47.935229 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse_analytics"
+[0m03:40:47.935229 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: BEGIN
+[0m03:40:47.936231 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:40:47.937189 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m03:40:47.938189 [debug] [ThreadPool]: Using duckdb connection "list_customer_churn_warehouse_analytics"
+[0m03:40:47.938189 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "connection_name": "list_customer_churn_warehouse_analytics"} */
+select
+      'customer_churn_warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'customer_churn_warehouse'
+  
+[0m03:40:47.954465 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m03:40:47.957333 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: ROLLBACK
+[0m03:40:47.958332 [debug] [ThreadPool]: Failed to rollback 'list_customer_churn_warehouse_analytics'
+[0m03:40:47.959332 [debug] [ThreadPool]: On list_customer_churn_warehouse_analytics: Close
+[0m03:40:47.960331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018239DBCB80>]}
+[0m03:40:47.961389 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:40:47.962368 [debug] [MainThread]: On master: BEGIN
+[0m03:40:47.962368 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:40:47.963370 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:40:47.964373 [debug] [MainThread]: On master: COMMIT
+[0m03:40:47.964373 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:40:47.965367 [debug] [MainThread]: On master: COMMIT
+[0m03:40:47.966361 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:40:47.967335 [debug] [MainThread]: On master: Close
+[0m03:40:47.971427 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.staging_customer_churn
+[0m03:40:47.972392 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics.staging_customer_churn ................... [RUN]
+[0m03:40:47.973391 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.customer_churn_dbt.staging_customer_churn'
+[0m03:40:47.974392 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.staging_customer_churn
+[0m03:40:47.982428 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:47.983392 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.staging_customer_churn
+[0m03:40:48.014428 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.015443 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.016420 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: BEGIN
+[0m03:40:48.017391 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m03:40:48.018392 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:40:48.019432 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.020391 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_tmp" as (
+    WITH source AS (
+    SELECT * FROM staging.customer_churn
+)
+, cleaned AS (
+    SELECT
+        customerID AS customer_id,
+        gender,
+        SeniorCitizen,
+        Partner_Flag,
+        Dependents_Flag,
+        tenure,
+        InternetService,
+        Contract,
+        MonthlyCharges,
+        TotalCharges,
+        Churn_Flag
+    FROM source
+)
+SELECT * FROM cleaned
+  );
+
+[0m03:40:48.021392 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:40:48.028430 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.029426 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+alter view "customer_churn_warehouse"."analytics"."staging_customer_churn" rename to "staging_customer_churn__dbt_backup"
+[0m03:40:48.030429 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:40:48.033426 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.034391 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+alter view "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_tmp" rename to "staging_customer_churn"
+[0m03:40:48.035392 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:40:48.047392 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: COMMIT
+[0m03:40:48.048406 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.048406 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: COMMIT
+[0m03:40:48.087367 [debug] [Thread-1 (]: SQL status: OK in 0.038 seconds
+[0m03:40:48.093675 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.staging_customer_churn"
+[0m03:40:48.094666 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.staging_customer_churn"} */
+
+      drop view if exists "customer_churn_warehouse"."analytics"."staging_customer_churn__dbt_backup" cascade
+    
+[0m03:40:48.109420 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m03:40:48.112418 [debug] [Thread-1 (]: On model.customer_churn_dbt.staging_customer_churn: Close
+[0m03:40:48.115149 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823F6D13F0>]}
+[0m03:40:48.116154 [info ] [Thread-1 (]: 1 of 3 OK created sql view model analytics.staging_customer_churn .............. [[32mOK[0m in 0.14s]
+[0m03:40:48.117172 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.staging_customer_churn
+[0m03:40:48.119163 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.fact_churn
+[0m03:40:48.120190 [info ] [Thread-1 (]: 2 of 3 START sql view model analytics.fact_churn ............................... [RUN]
+[0m03:40:48.121154 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_churn_dbt.staging_customer_churn, now model.customer_churn_dbt.fact_churn)
+[0m03:40:48.121154 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.fact_churn
+[0m03:40:48.126153 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.128158 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.fact_churn
+[0m03:40:48.133183 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.134156 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.135204 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: BEGIN
+[0m03:40:48.136193 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:40:48.137188 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:40:48.138154 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.139154 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.fact_churn"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."fact_churn__dbt_tmp" as (
+    WITH base AS (
+    SELECT * FROM "customer_churn_warehouse"."analytics"."staging_customer_churn"
+)
+SELECT
+    customer_id,
+    tenure,
+    Contract,
+    InternetService,
+    MonthlyCharges,
+    TotalCharges,
+    Churn_Flag
+FROM base
+  );
+
+[0m03:40:48.141153 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:40:48.145153 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.146169 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.fact_churn"} */
+alter view "customer_churn_warehouse"."analytics"."fact_churn__dbt_tmp" rename to "fact_churn"
+[0m03:40:48.147170 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:40:48.148154 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: COMMIT
+[0m03:40:48.149153 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.150154 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: COMMIT
+[0m03:40:48.154152 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m03:40:48.157153 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.fact_churn"
+[0m03:40:48.157153 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.fact_churn"} */
+
+      drop view if exists "customer_churn_warehouse"."analytics"."fact_churn__dbt_backup" cascade
+    
+[0m03:40:48.159153 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:40:48.160153 [debug] [Thread-1 (]: On model.customer_churn_dbt.fact_churn: Close
+[0m03:40:48.161154 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823F6BEEF0>]}
+[0m03:40:48.162154 [info ] [Thread-1 (]: 2 of 3 OK created sql view model analytics.fact_churn .......................... [[32mOK[0m in 0.04s]
+[0m03:40:48.163038 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.fact_churn
+[0m03:40:48.164077 [debug] [Thread-1 (]: Began running node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:40:48.165047 [info ] [Thread-1 (]: 3 of 3 START sql view model analytics.intermediate_customer_metrics ............ [RUN]
+[0m03:40:48.166096 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.customer_churn_dbt.fact_churn, now model.customer_churn_dbt.intermediate_customer_metrics)
+[0m03:40:48.167078 [debug] [Thread-1 (]: Began compiling node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:40:48.171077 [debug] [Thread-1 (]: Writing injected SQL for node "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.173046 [debug] [Thread-1 (]: Began executing node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:40:48.178082 [debug] [Thread-1 (]: Writing runtime sql for node "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.179055 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.180079 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: BEGIN
+[0m03:40:48.181047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:40:48.182056 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:40:48.183073 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.183073 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.intermediate_customer_metrics"} */
+
+  
+  create view "customer_churn_warehouse"."analytics"."intermediate_customer_metrics__dbt_tmp" as (
+    WITH base AS (
+    SELECT * FROM "customer_churn_warehouse"."analytics"."staging_customer_churn"
+)
+SELECT
+    gender,
+    Contract,
+    InternetService,
+    COUNT(*) AS total_customers,
+    SUM(Churn_Flag) AS churned_customers,
+    ROUND(SUM(Churn_Flag) * 100.0 / COUNT(*), 2) AS churn_rate
+FROM base
+GROUP BY 1,2,3
+ORDER BY churn_rate DESC
+  );
+
+[0m03:40:48.189798 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m03:40:48.192797 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.193797 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.intermediate_customer_metrics"} */
+alter view "customer_churn_warehouse"."analytics"."intermediate_customer_metrics__dbt_tmp" rename to "intermediate_customer_metrics"
+[0m03:40:48.194798 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:40:48.195798 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: COMMIT
+[0m03:40:48.196796 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.197798 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: COMMIT
+[0m03:40:48.210658 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m03:40:48.214663 [debug] [Thread-1 (]: Using duckdb connection "model.customer_churn_dbt.intermediate_customer_metrics"
+[0m03:40:48.215663 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "customer_churn_profile", "target_name": "dev", "node_id": "model.customer_churn_dbt.intermediate_customer_metrics"} */
+
+      drop view if exists "customer_churn_warehouse"."analytics"."intermediate_customer_metrics__dbt_backup" cascade
+    
+[0m03:40:48.216664 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:40:48.218663 [debug] [Thread-1 (]: On model.customer_churn_dbt.intermediate_customer_metrics: Close
+[0m03:40:48.219664 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0e32c323-6866-400e-a8f7-cfeaf0042689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823F7DA530>]}
+[0m03:40:48.220664 [info ] [Thread-1 (]: 3 of 3 OK created sql view model analytics.intermediate_customer_metrics ....... [[32mOK[0m in 0.05s]
+[0m03:40:48.221664 [debug] [Thread-1 (]: Finished running node model.customer_churn_dbt.intermediate_customer_metrics
+[0m03:40:48.222665 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:40:48.223664 [debug] [MainThread]: On master: BEGIN
+[0m03:40:48.224664 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:40:48.225663 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:40:48.226663 [debug] [MainThread]: On master: COMMIT
+[0m03:40:48.226663 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:40:48.227663 [debug] [MainThread]: On master: COMMIT
+[0m03:40:48.228662 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:40:48.229665 [debug] [MainThread]: On master: Close
+[0m03:40:48.229665 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:40:48.230663 [debug] [MainThread]: Connection 'create_customer_churn_warehouse_analytics' was properly closed.
+[0m03:40:48.231680 [debug] [MainThread]: Connection 'list_customer_churn_warehouse_analytics' was properly closed.
+[0m03:40:48.231680 [debug] [MainThread]: Connection 'model.customer_churn_dbt.intermediate_customer_metrics' was properly closed.
+[0m03:40:48.232664 [info ] [MainThread]: 
+[0m03:40:48.233663 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m03:40:48.234667 [debug] [MainThread]: Command end result
+[0m03:40:48.258662 [debug] [MainThread]: Wrote artifact WritableManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\manifest.json
+[0m03:40:48.261663 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\semantic_manifest.json
+[0m03:40:48.269662 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\DEPI & Eyouth\MiniProject\project_customer_churn\customer_churn_dbt\target\run_results.json
+[0m03:40:48.270665 [info ] [MainThread]: 
+[0m03:40:48.271229 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:40:48.272236 [info ] [MainThread]: 
+[0m03:40:48.273236 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m03:40:48.274648 [debug] [MainThread]: Command `dbt run` succeeded at 03:40:48.274648 after 2.09 seconds
+[0m03:40:48.275648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823B928310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823DAFE1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823F23F400>]}
+[0m03:40:48.275648 [debug] [MainThread]: Flushing usage events
+[0m03:40:49.117738 [debug] [MainThread]: An error was encountered while trying to flush usage events

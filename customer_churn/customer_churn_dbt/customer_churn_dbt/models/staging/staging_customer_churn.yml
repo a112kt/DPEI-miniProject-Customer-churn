@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: staging_customer_churn
+    description: "Cleansed customer churn data from staging schema"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: Churn_Flag
+        tests:
+          - not_null

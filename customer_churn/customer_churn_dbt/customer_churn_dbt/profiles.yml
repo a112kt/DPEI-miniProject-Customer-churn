@@ -1,0 +1,7 @@
+customer_churn_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/customer_churn_warehouse.duckdb
+      schema: analytics
